@@ -19,60 +19,83 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            },
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           },
         },
-      }
+      },
+    }
     </script>
     <style>
-      .manrope{
-        font-family: 'Manrope', sans-serif;
-      }
+    .manrope{
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .button:hover {
+      background: linear-gradient(to right, #f97316, #dc2626);
+    }
+
+    .grid-hover:hover {
+      background: linear-gradient(to right, #f97316, #dc2626);
+      color: white;
+    }
+
     </style>
-  </head>
-  <body class="manrope">
-    <!-- Main Content -->
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-      <!-- Header Section -->
-      <header class="lg:flex pt-10 mb-20">
-        <!-- Text content -->
-        <div>
-          <h1 class="text-5xl md:text-7xl">
-            It's good <br />
-            tea time at The <br />
+    </head>
+    
+    <body class="manrope">
+      
+      <!-- Main Content -->
+       
+      <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        
+        <!-- Header Section -->
+         
+        <header class="lg:flex pt-10 mb-20">
+          
+          <!-- Text content -->
+           
+          <div>
+            <h1 class="text-5xl md:text-7xl">
+            It's good <br/>
+            tea time at The <br/>
             Tea House
           </h1>
-          <br />
+          <br/>
           <p class="text-gray-500 w-3/4">
             Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
             Your Taste Buds.
           </p>
-          <br />
-          <button
-            class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold"
-          >
-            Explore More
+          <br/>
+          <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg button">Explore More
             <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
           </button>
         </div>
+
         <!-- Image Content -->
+
         <div class="relative">
+
           <!-- Image -->
+
           <div>
             <img class="w-full" src="./images/banner.png" alt="" />
           </div>
+
           <!-- Card -->
+
           <div
             class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-80 md:left-32 lg:left-28"
           >
             <!-- icon -->
+
             <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+
             <!-- Text -->
+             
             <div class="ml-2">
               <h2 class="lg:text-2xl font-bold">5.00</h2>
               <p class="text-gray-500">Trust Pilot Ratings</p>
@@ -82,8 +105,11 @@
       </header>
 
       <!-- Featured Products Section -->
+
       <section class="py-8 lg:py-24">
+
         <!-- Title -->
+
         <div class="text-center mb-8">
           <h1 class="text-3xl md:text-4xl font-bold mb-5">
             Our Featured Products
@@ -95,12 +121,15 @@
             believable.
           </p>
         </div>
+
         <!-- Grid Cards -->
+
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center"
         >
           <!-- Product Card -->
-          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
             <img class="mx-auto pt-4" src="./images/tea-1.png" alt="" />
             <div class="p-4">
               <h2 class="font-bold text-xl">Milk Tea</h2>
@@ -109,8 +138,10 @@
               </p>
             </div>
           </div>
+
           <!-- Product Card -->
-          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
             <img class="mx-auto pt-4" src="./images/tea-2.png" alt="" />
             <div class="p-4">
               <h2 class="font-bold text-xl">Black Tea</h2>
@@ -119,8 +150,10 @@
               </p>
             </div>
           </div>
+
           <!-- Product Card -->
-          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
             <img class="mx-auto pt-4" src="./images/tea-3.png" alt="" />
             <div class="p-4">
               <h2 class="font-bold text-xl">Green Tea</h2>
@@ -129,8 +162,10 @@
               </p>
             </div>
           </div>
+
           <!-- Product Card -->
-          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
             <img class="mx-auto pt-4" src="./images/tea-4.png" alt="" />
             <div class="p-4">
               <h2 class="font-bold text-xl">Lemon Tea</h2>
@@ -143,24 +178,29 @@
       </section>
 
       <!-- Great Tea Section -->
+
       <section class="mb-24">
         <div class="grid grid-cols-1 lg:grid-cols-2">
+
           <!-- Image Section -->
+
           <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
             <div
               class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"
             ></div>
-            <div class="bg-orange-50 rounded-xl row-span-2">
+            <div class="bg-orange-50 rounded-xl row-span-2 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
               <img class="mx-auto my-5" src="./images/fresh-1.png" alt="" />
             </div>
-            <div class="bg-stone-100 rounded-xl row-span-2">
+            <div class="bg-stone-100 rounded-xl row-span-2 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
               <img class="mx-auto my-5" src="./images/fresh-2.png" alt="" />
             </div>
             <div
               class="h-38 bg-gradient-to-r from-stone-200 to-stone-100 rounded-xl"
             ></div>
           </div>
+
           <!-- Text Section -->
+
           <div>
             <h1 class="text-5xl font-bold mb-5">
               Great Tea, Freshly Presented
@@ -189,11 +229,13 @@
       </section>
 
       <!-- Reviews Section -->
+
       <section class="mb-24">
         <div
           class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16"
         >
           <!-- Text Section -->
+
           <div class="flex justify-center items-center overflow-hidden">
             <div class="w-5/6">
               <h1 class="text-5xl font-bold mb-5 mt-10">
@@ -205,15 +247,18 @@
                 injected humour, or randomised words which don't look even
                 slightly believable.
               </p>
-              <button class="bg-white text-orange-700 px-3 py-2 rounded-lg">
+              <button class="bg-white text-orange-700 px-3 py-2 rounded-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
                 Show All
               </button>
             </div>
           </div>
 
           <!-- Reviews Card Section -->
+           
           <div class="relative py-24">
+
             <!-- Middle Card -->
+
             <div class="absolute z-10 top-44 md:top-52">
               <div
                 class="h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5"
@@ -233,6 +278,7 @@
             </div>
 
             <!-- top card -->
+
             <div
               class="relative left-8 md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
             >
@@ -250,6 +296,7 @@
             </div>
 
             <!-- bottom card -->
+
             <div
               class="relative left-8 md:left-32 top-10 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
             >
@@ -269,7 +316,8 @@
         </div>
       </section>
 
-      <!-- News Section Homework -->
+      <!-- News & Events Section -->
+
        <section class="my-[8.125rem]">
         <div class="flex flex-col justify-center items-center text-center mb-12">
           <h1 class="font-extrabold text-[2.8125rem] text-[#1C1C1C] mb-5">News & Events</h1>
@@ -278,7 +326,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-1 gap-6">
 
-          <div class="border-x-2 border-y-2 border-x-[#D2D2D2] rounded-xl px-5 py-5">
+          <div class="border-x-2 border-y-2 border-x-[#D2D2D2] rounded-xl px-5 py-5 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
             <img class="pb-5" src="./images/news-1.png" alt="News-1" srcset="">
             <h2 class="text-base font-medium text-[#777777] pb-2">Feb 05, 2027</h2>
             <h1 class="text-xl font-extrabold text-[#1C1C1C] pb-2">Collecting 8 points for discount</h1>
@@ -286,7 +334,7 @@
             <h2 class="text-base font-bold text-[#777777]">Learn More</h2>
           </div>
 
-          <div class="border-x-2 border-y-2 border-x-[#D2D2D2] rounded-xl px-5 py-5">
+          <div class="border-x-2 border-y-2 border-x-[#D2D2D2] rounded-xl px-5 py-5 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
             <img class="pb-5" src="./images/news-2.png" alt="News-1" srcset="">
             <h2 class="text-base font-medium text-[#777777] pb-2">Feb 05, 2027</h2>
             <h1 class="text-xl font-extrabold text-[#1C1C1C] pb-2">Collecting 8 points for discount</h1>
@@ -294,40 +342,42 @@
             <h2 class="text-base font-bold text-[#777777]">Learn More</h2>
           </div>
 
-          <div class="border-x-2 border-y-2 border-x-[#D2D2D2] rounded-xl px-5 py-5">
+          <div class="border-x-2 border-y-2 border-x-[#D2D2D2] rounded-xl px-5 py-5 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:rotate-1 grid-hover">
             <img class="pb-5" src="./images/news-3.png" alt="News-1" srcset="">
             <h2 class="text-base font-medium text-[#777777] pb-2">Feb 05, 2027</h2>
             <h1 class="text-xl font-extrabold text-[#1C1C1C] pb-2">Collecting 8 points for discount</h1>
             <h2 class="text-base font-medium text-[#777777] pb-2">There are many variations of passages of Lorem Ipsum available.</h2>
             <h2 class="text-base font-bold text-[#777777]">Learn More</h2>
           </div>
-
-          
-          
         </div>
-
-
        </section>
-
     </main>
+
     <!-- Footer Section -->
+
     <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
       <div class="w-9/12 mx-auto">
+
         <!-- Logo -->
+
         <div class="mb-8 flex justify-between">
           <img class="mb-8" src="./images/cup.png" alt="" />
           <div class="flex items-center gap-2">
             <h4>Ready to get started?</h4>
             <button
-              class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold"
+              class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg button"
             >
               Get Started
             </button>
           </div>
         </div>
+
         <!-- Links -->
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
           <!-- first column -->
+
           <div>
             <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
             <ul class="space-y-2">
@@ -345,7 +395,9 @@
               </li>
             </ul>
           </div>
+
           <!-- second column -->
+
           <div>
             <h3 class="font-semibold text-lg mb-3">Our Services</h3>
             <ul class="space-y-2">
@@ -389,7 +441,7 @@
                   class="bg-transparent border-b-2 border-black w-4/6"
                 />
                 <i
-                  class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"
+                  class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
                 ></i>
                 <div class="flex justify-between w-2/5 mb-2 mt-8">
                   <i class="fa-brands fa-facebook"></i>
